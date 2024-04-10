@@ -10,8 +10,8 @@ export default function About() {
         <div className='about-des w-full pt-5'>
           {/* FIRSST SECTION */}
           <div className='about-we w-full md:flex md:justify-between py-5 items-center  '>
-            <div className='md:w-1/2  mx-auto'>
-              <img src=".\About section\digital-printing-concept-in-circle-vector-20923017.jpg" alt="we" className='digital-img' />
+            <div className='md:w-1/2  mx-auto flex justify-center '>
+              <img src=".\About section\digital-printing-concept-in-circle-vector-20923017.jpg" alt="we" className='digital-img w-full' />
             </div>
             <div className='md:w-1/2'>
               <h1 className='text-center md:text-4xl text-2xl font-bold py-4 underline'>WHO WE ARE</h1>

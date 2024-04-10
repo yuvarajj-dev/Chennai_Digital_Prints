@@ -1,0 +1,16 @@
+.Product{
+    width: 100%;
+    max-width: 90%;
+    margin:  0 auto;
+}
+.product-img-div{
+    border-radius: 20px;
+}
+.product-img-div > img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+.product-text > ul > li:hover{
+    color: rgb(17, 164, 232);
+}

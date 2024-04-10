@@ -1,0 +1,14 @@
+.navbg{
+    background-color: #fff;
+}
+.logo{
+    border-radius: 15px;
+    height: 5rem;
+}
+.nav-btn{
+    background-color: #00a884;
+    border-radius: 25px;
+}
+.nav-btn:hover{
+    background-color: #00a884 !important;
+}

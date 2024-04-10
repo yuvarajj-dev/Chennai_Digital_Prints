@@ -13,7 +13,6 @@ export default function Home() {
         <>
             <div id="Home" className='swiper '>
                 <Swiper
-                    direction='vertical'
                     pagination={true}
                     modules={[Pagination, Autoplay]}
                     className="mySwiper"

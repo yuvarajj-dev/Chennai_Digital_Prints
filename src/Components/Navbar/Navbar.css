@@ -6,9 +6,13 @@
     height: 5rem;
 }
 .nav-btn{
-    background-color: #00a884;
+    background-color: #25d366;
     border-radius: 25px;
 }
 .nav-btn:hover{
-    background-color: #00a884 !important;
+    background-color: #09cafa !important;
+    transition: all 2s;
+}
+.nav-link:hover{
+    color: red;
 }

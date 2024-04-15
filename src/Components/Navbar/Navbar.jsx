@@ -25,12 +25,12 @@ export default function NAVBAR() {
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse  >
-                    <Navbar.Link onClick={() => { Scroll(document.getElementById("Home")) }} className='md:text-xl text-lg text-black font-bold hover:text-blue-500 ' href="#" >
+                    <Navbar.Link onClick={() => { Scroll(document.getElementById("Home")) }} className='md:text-xl nav-link text-lg text-black font-bold hover:text-blue-500 ' href="#" >
                         Home
                     </Navbar.Link>
-                    <Navbar.Link onClick={() => { Scroll(document.getElementById("About")) }} className='md:text-xl text-lg text-black font-bold ' href="#">About</Navbar.Link>
-                    <Navbar.Link onClick={() => { Scroll(document.getElementById("Product")) }} className='md:text-xl text-lg text-black font-bold ' href="#">Products</Navbar.Link>
-                    <Navbar.Link onClick={() => { Scroll(document.getElementById("Contact")) }} className='md:text-xl text-lg text-black font-bold ' href="#">Contact</Navbar.Link>
+                    <Navbar.Link onClick={() => { Scroll(document.getElementById("About")) }} className='md:text-xl nav-link text-lg text-black font-bold ' href="#">About</Navbar.Link>
+                    <Navbar.Link onClick={() => { Scroll(document.getElementById("Product")) }} className='md:text-xl nav-link  text-lg text-black font-bold ' href="#">Products</Navbar.Link>
+                    <Navbar.Link onClick={() => { Scroll(document.getElementById("Contact")) }} className='md:text-xl nav-link text-lg text-black font-bold ' href="#">Contact</Navbar.Link>
                 </Navbar.Collapse>
             </Navbar>
         </>

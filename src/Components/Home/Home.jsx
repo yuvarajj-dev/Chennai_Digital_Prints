@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/scrollbar';
 import "./Home.css";
 import 'swiper/css/pagination';
-import {Autoplay, Pagination } from 'swiper/modules';
+import {Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Carousel from './Car_data/Data';
 
 
@@ -14,13 +14,14 @@ export default function Home() {
             <div id="Home" className='swiper '>
                 <Swiper
                     pagination={true}
-                    modules={[Pagination, Autoplay]}
+                    modules={[Pagination,Navigation, Autoplay]}
                     className="mySwiper"
+                    navigation={true}
                     autoplay={{
-                        delay: 2500,
+                        delay: 3000,
                         disableOnInteraction: false,
                       }}
-                    loop={100}
+                    loop={Infinity}
                 >
                     {
                         Carousel.map((val)=>(

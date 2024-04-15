@@ -1,21 +1,17 @@
-.station, .product , .photo{
-    height: 60vh;
-    width: 100%;
-    padding: 5rem 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-color: #f9f9f9;
+h1,h2,p,a{
+    font-family: "Roboto Slab", serif;
 }
-@media (width < 1280px) {
-    .station, .photo , .product{
-        height: auto;
-    }
+::-webkit-scrollbar{
+    width: .5rem;
 }
-@media (width < 638px) {
-    .station,.photo, .product{
-        height: auto;
-        padding: 2rem 0 0  0;
-    }
-}
+::-webkit-scrollbar-track {
+    background: #FEFAF6; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #DAC0A3; 
+    border-radius: 40px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #102C57;
+  }
+  

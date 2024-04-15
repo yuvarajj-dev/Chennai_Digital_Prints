@@ -1,0 +1,149 @@
+.card {
+    width: 20rem;
+    height: 25rem;
+    transition: all 0.2s;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 7px 7px 0px 0px #0b2447;
+  }
+  
+  .card:hover {
+    transform: scale(1.04) rotate(1deg);
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 5px 5px #0b2447;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+  
+  .circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+  }
+  
+  .card-inner {
+    width: inherit;
+    height: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
+
+/* mine */
+.card-img{
+    border-radius: 10px;
+}
+
+
+/* heading */
+.card-head {
+    font-family: inherit;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .card-head:focus,
+  .card-head:hover {
+    color: black;
+  }
+  
+  .card-head:focus:after,
+  .card-head:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .card-head:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  /* button */
+  .button {
+    padding: 12px 25px;
+    background: #fff;
+    border: 1px solid #121212;
+    color: #121212;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .button::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #121212;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.5s ease;
+  }
+  .button:hover {
+    color: #fff;
+  }
+  .button:hover::after {
+    bottom: 0;
+    border-radius: 0;
+  }
+  
+  @media (width <= 850px){
+    .card{
+        width: 15rem;
+        height: 20rem;
+    }
+  }
+  @media (width <= 500px){
+    .card{
+        width: 15rem;
+        height: 20rem;
+    }
+    .button{
+        width: 90%;
+        height: 40%;
+    }
+  }

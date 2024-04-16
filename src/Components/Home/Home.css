@@ -1,17 +1,26 @@
 .swiper{
-    height: 90dvh;
     width: 100%;
+    background-color: #FFFFFF;
 }
-
+.hero-image{
+    z-index: 1;
+}
+.hero-text{
+    z-index: 2;
+    color: #2e343d;
+}
+.hero-text-div{
+    top: 50px;
+}
+.hero-img-div{
+    height: 70%;
+}
 .car-img{
     width: 100%;
     height: 90dvh;
 }
-@media (width <= 1024px) {
-    .swiper{
-        height: 70vh;
-    }
-    .car-img{
-        height: 70vh;
+@media(width < 600px){
+    .hero-image{
+        margin: 1.5rem 0 0 0;
     }
 }

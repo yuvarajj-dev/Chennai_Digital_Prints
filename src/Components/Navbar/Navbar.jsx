@@ -13,7 +13,7 @@ export default function NAVBAR() {
 
     return (
         <>
-            <Navbar fluid rounded className='shadow-lg navbg'>
+            <Navbar fluid rounded className=' navbg'>
                 <Navbar.Brand className='h-16 mx-auto sm:mx-0 '>
                     <img src=".\web\logo with name.png" className="mr-3  w-96 logo sm:h-9" alt="Flowbite React Logo" />
                 </Navbar.Brand>

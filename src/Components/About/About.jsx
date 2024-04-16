@@ -35,35 +35,37 @@ export default function About() {
         const text = new SplitType(element, { type: "chars" });
         gsap.set(text.chars, { perspective: 500 });
         gsap.from(text.chars, {
+          y: '110%',
+          opacity: 0,
+          rotationZ: '10',
+          duration: 1.1,
+          ease: 'back.out',
+          stagger: 0.1,
+
           scrollTrigger: {
             trigger: element,
             ...scrollTriggerSettings,
-          },
-          duration: 15,
-          scale: 4,
-          autoAlpha: 0,
-          ease: "back",
-          stagger: 0.02,
+          }
         });
       });
     };
 
     animetext(".head", {
       start: "bottom 100%",
-      end: "top 20%",
+      end: "top 50%",
       scrub: true,
     });
     animetext(".who", {
       start: "bottom 100%",
-      end: "top 30%",
+      end: "top 50%",
       scrub: true,
     });
     animetext(".who-text", {
       start: "bottom 90%",
-      end: "top 40%",
+      end: "top 50%",
       scrub: true,
     });
-    
+
 
   }, []);
 
@@ -86,20 +88,12 @@ export default function About() {
             </div>
           </div>
           {/* SECOND SECTION */}
-          <div className='md:flex w-full py-5 justify-between'>
-            <div className='what-text order-2 md:order-1  md:w-1/2'>
+          <div className='md:flex w-full items-center py-5 justify-between'>
+            <div className='what-text  order-2 md:order-1  md:w-1/2'>
               <h1 className='text-center md:text-4xl text-2xl who font-bold py-4'>WHAT WE DO</h1>
               <p className='font-semibold md:text-xl text-justify'>At Chennai Digital Prints, we specialize in design and printing services.
-                From creating eye-catching visuals to printing them flawlessly, we handle it all. Our range of products includes:</p>
-              <ul className='font-semibold md:text-xl w-32 mx-auto my-3 text-justify list-disc'>
-                <li>Visiting Cards</li>
-                <li>Brochures</li>
-                <li>Pamphlets</li>
-                <li>Photo Frames</li>
-                <li>Lanyards</li>
-                <li>ID Cards</li>
-              </ul>
-              <p className='font-semibold  md:text-xl text-justify'>And much more! With top-notch materials and attention to detail, we ensure that every product meets the highest standards of quality.</p>
+                From creating eye-catching visuals to printing them flawlessly, we handle it all. Our range of products includes: Visiting Cards, Brochures, Pamphlets, Photo Frames, Lanyards, ID Cards
+                And much more! With top-notch materials and attention to detail, we ensure that every product meets the highest standards of quality.</p>
             </div>
             <div className="what-img order-1 md:order-2 md:w-1/2 py-4 md:py-0 flex justify-center ">
               <img src=".\About section\id-card-rope-967.jpg" alt="idcard" id="idcard" className='shadow-xl' />

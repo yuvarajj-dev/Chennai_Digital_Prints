@@ -51,7 +51,7 @@ export default function About() {
     };
 
     animetext(".head", {
-      start: "bottom 100%",
+      start: "bottom 90%",
       end: "top 50%",
       scrub: true,
     });

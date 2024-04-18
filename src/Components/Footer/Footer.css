@@ -1,5 +1,53 @@
 .Footer{
-    height: 30vh;
+    height: 50vh;
     width: 100%;
     background-color: #27262c;
+}
+.wave-main{
+    position: relative;
+}
+
+
+.waves > use {
+  animation: move-forever 2s -2s linear infinite;
+}
+
+.waves > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 6s;
+}
+.waves > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 3s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+.svg-wave {
+  position: absolute;
+  left: 0;
+  bottom: -24rem;
+  width: 100%;
+  height: 10vw;
+  max-height: 200px;
+}
+
+@media (width < 1024px){
+    .svg-wave{
+        bottom: -22rem;
+        height: 25vh;
+    }
+}
+@media (width < 600px){
+    .svg-wave{
+        height: 20vh;
+        bottom: -21.5rem;
+    }
 }

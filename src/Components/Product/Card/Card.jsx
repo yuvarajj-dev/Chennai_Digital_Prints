@@ -16,7 +16,7 @@ export default function Card() {
                 scrollTrigger: {
                     trigger: title,
                     scrub: true,
-                    start: 'top 100%',
+                    start: 'top 95%',
                     end: 'bottom 20%'
                 }
             });

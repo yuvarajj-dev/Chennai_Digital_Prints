@@ -5,7 +5,7 @@ import Card from './Card/Card'
 export default function Common_product() {
     return (
         <>
-            <div className='Product'>
+            <div id='Product' className='Product'>
                <div className='flex justify-center my-10'>
                     <h1 className='sm:text-5xl text-center text-3xl font-bold head '>OUR PRODUCTS</h1>
                </div>

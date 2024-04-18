@@ -14,5 +14,6 @@
 .marqu{
     width: 100%;
     height: 6rem;
-    background-color: blue;
+    border-radius: 100px;
+    background-color: #fff;
 }

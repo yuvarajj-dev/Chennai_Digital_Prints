@@ -5,7 +5,7 @@ import SplitType from 'split-type';
 
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 export default function About() {
-  window.addEventListener("scroll", () => {
+  window.addEventListener("load", () => {
     ScrollTrigger.refresh();
   })
   useEffect(() => {
@@ -116,8 +116,8 @@ export default function About() {
           </div>
           {/* Marquee space  */}
           <div className='py-5'>
-            <h1 className='md:text-3xl text-xl font-bold who text-center py-3 '>OUR CLIENTS</h1>
-            <div className='marqu'>
+            <h1 className='md:text-3xl text-xl font-bold who text-center py-3  '>OUR CLIENTS</h1>
+            <div className='marqu shadow-xl'>
             </div>
           </div>
         </div>

@@ -14,6 +14,17 @@ export default function Common_product() {
                     <Card />
                     <Card />
                     <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
                </div>
             </div>
         </>

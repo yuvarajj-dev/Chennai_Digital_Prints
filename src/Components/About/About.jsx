@@ -5,6 +5,9 @@ import SplitType from 'split-type';
 
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 export default function About() {
+  window.addEventListener("scroll", () => {
+    ScrollTrigger.refresh();
+  })
   useEffect(() => {
     // Apply animations using ScrollTrigger
     gsap.to(".round-img", {
@@ -17,16 +20,23 @@ export default function About() {
       duration: 2,
       rotate: 360
     });
-    gsap.to("#idcard", {
-      scrollTrigger: {
-        trigger: "#idcard",
-        start: "top 85%",
-        end: "bottom 85%",
-        scrub: true, // Smoothly scrub through animation as you scroll
+    gsap.fromTo(
+      "#idcard",
+      {
+        opacity: 0, // Starting opacity
       },
-      duration: 2,
-      rotate: 360
-    });
+      {
+        opacity: 1, // Ending opacity
+        scrollTrigger: {
+          trigger: "#idcard",
+          start: "top 85%",
+          end: "bottom 80%",
+          scrub: true,
+        },
+        duration: 2,
+      }
+    );
+
   }, []);
   useEffect(() => {
     const animetext = (selector, scrollTriggerSettings) => {
@@ -65,8 +75,6 @@ export default function About() {
       end: "top 50%",
       scrub: true,
     });
-
-
   }, []);
 
   return (
@@ -96,7 +104,7 @@ export default function About() {
                 And much more! With top-notch materials and attention to detail, we ensure that every product meets the highest standards of quality.</p>
             </div>
             <div className="what-img order-1 md:order-2 md:w-1/2 py-4 md:py-0 flex justify-center ">
-              <img src=".\About section\id-card-rope-967.jpg" alt="idcard" id="idcard" className='shadow-xl' />
+              <img src="https://cdni.iconscout.com/illustration/premium/thumb/printing-house-5756662-4816434.png" alt="idcard" id="idcard" className='' />
             </div>
           </div>
           {/* Third Secion */}

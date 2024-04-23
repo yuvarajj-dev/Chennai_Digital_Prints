@@ -49,6 +49,35 @@ const cardlist = [
     img_url: "https://5.imimg.com/data5/AE/PN/MY-25908309/multicolor-lanyard-500x500.jpg",
     name: "Lanyards",
   },
+  {
+    img_url: "https://printroo.com.au/wp-content/uploads/2013/07/envelope.png",
+    name: "Envelopes",
+  },
+  {
+    img_url:"https://www.canvaschamp.in/static/images/landingpage/frameprints/fp-1.jpg",
+    name:"Photo Frames"
+  },
+  {
+    img_url:"https://niprint.co.uk/wp-content/uploads/2021/09/ncr_A5_3-600x600.jpg",
+    name:"Bill Books"
+  },
+  {
+    img_url:"https://i0.wp.com/www.dotprint.co.uk/wp-content/uploads/2021/02/plan-printing-dotprint.jpg",
+    name:"Plan Printing"
+  },
+  {
+    img_url:"https://transform.octanecdn.com/cdn/https://octanecdn.com/colorvisionprintingcom/colorvisionprintingcom_545213800.png",
+    name:"Spiral Binding"
+  },
+  {
+    img_url:"https://rukminim2.flixcart.com/image/850/1000/kn6cxow0/diary-notebook/0/x/c/motivational-quotes-wiro-binding-follow-diary-accuprints-original-imagfxfsapqkmrgr.jpeg?q=20&crop=false",
+    name:"Wiro Binding"
+  },
+  {
+    img_url:"https://5.imimg.com/data5/SELLER/Default/2023/1/GG/WK/EQ/68683419/5210-program-control-paper-cutting-machine-500x500.jpeg",
+    name:"Program Cutting Machine "
+  },
+
 ]
 
 export default cardlist;

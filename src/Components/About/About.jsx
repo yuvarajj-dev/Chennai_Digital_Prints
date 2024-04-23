@@ -5,7 +5,7 @@ import SplitType from 'split-type';
 
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 export default function About() {
-  window.addEventListener("load", () => {
+  window.addEventListener("loadstart", () => {
     ScrollTrigger.refresh();
   })
   useEffect(() => {

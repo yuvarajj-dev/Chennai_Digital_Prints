@@ -17,8 +17,8 @@ export default function Card(props) {
                 scrollTrigger: {
                     trigger: title,
                     scrub: true,
-                    start: 'top 95%',
-                    end: 'bottom 20%'
+                    start: 'top 80%',
+                    end: 'bottom 30%'
                 }
             });
             const img = imgs[i];

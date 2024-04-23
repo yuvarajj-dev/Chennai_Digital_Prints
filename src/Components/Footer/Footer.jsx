@@ -6,7 +6,7 @@ export default function Footer() {
         <>
             <div id="Contact" className='Footer mt-10 relative text-white'>
 
-                <div className='wave-main '>
+                {/* <div className='wave-main '>
                     <svg
                         className='svg-wave'
                         xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ export default function Footer() {
                             />
                         </g>
                     </svg>
-                </div>
+                </div> */}
             </div>
         </>
     )

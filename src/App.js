@@ -7,9 +7,10 @@ import Common_product from './Components/Product/Common_product';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(_ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger)
 function App() {
     window.addEventListener("load",()=>{
+      console.log("hello");
       ScrollTrigger.refresh();
     })
  

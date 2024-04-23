@@ -91,17 +91,19 @@ export default function About() {
             </div>
             <div className='md:w-1/2'>
               <h1 className='text-center md:text-4xl text-2xl font-bold py-4  who '>WHO WE ARE</h1>
-              <p className='font-semibold md:text-xl  text-justify'>Welcome to Chennai Digital Prints! Since 2006, we've been your trusted destination for all your printing needs. Our mission is simple:
-                to provide the best quality products and services at affordable prices, always keeping our customers' satisfaction as our top priority.</p>
+              <p className='font-semibold md:text-xl  text-justify'>At Chennai Digital Prints, we specialize in delivering top-notch printing solutions tailored to meet your needs. Whether you're looking for vibrant business cards,
+                eye-catching posters, or personalized banners, we've got you covered. Our dedicated team utilizes state-of-the-art technology to ensure crisp, high-quality prints every time. From concept to completion,
+                we're committed to exceeding your expectations and bringing your vision to life. Experience the difference with Chennai Digital Prints.</p>
             </div>
           </div>
           {/* SECOND SECTION */}
           <div className='md:flex w-full items-center py-5 justify-between'>
             <div className='what-text  order-2 md:order-1  md:w-1/2'>
               <h1 className='text-center md:text-4xl text-2xl who font-bold py-4'>WHAT WE DO</h1>
-              <p className='font-semibold md:text-xl text-justify'>At Chennai Digital Prints, we specialize in design and printing services.
-                From creating eye-catching visuals to printing them flawlessly, we handle it all. Our range of products includes: Visiting Cards, Brochures, Pamphlets, Photo Frames, Lanyards, ID Cards
-                And much more! With top-notch materials and attention to detail, we ensure that every product meets the highest standards of quality.</p>
+              <p className='font-semibold md:text-xl text-justify'>Chennai Digital Prints, we're more than just a printing company - we're your trusted partner in bringing your ideas to life. Since 2006,
+                we've been dedicated to providing exceptional printing services that exceed expectations. With a focus on quality, affordability, and customer satisfaction, we strive to be your go-to destination
+                for all your printing needs. Our experienced team is passionate about delivering excellence in every project,
+                ensuring that your vision is realized with precision and care. Discover the Chennai Digital Prints difference today.</p>
             </div>
             <div className="what-img order-1 md:order-2 md:w-1/2 py-4 md:py-0 flex justify-center ">
               <img src="https://cdni.iconscout.com/illustration/premium/thumb/printing-house-5756662-4816434.png" alt="idcard" id="idcard" className='' />
@@ -110,9 +112,9 @@ export default function About() {
           {/* Third Secion */}
           <div className='customer py-5'>
             <h1 className='text-center md:text-4xl text-2xl font-bold py-4 who'>Customer Satisfaction Guaranteed</h1>
-            <p className='font-semibold md:text-xl text-justify md:text-center md:w-1/2 mx-auto'>At Chennai Digital Prints, we guarantee your satisfaction. Our dedicated team is here to assist you with any questions, requests, or concerns you may have. We're committed to ensuring that every interaction with us is seamless and enjoyable, because your satisfaction is our priority.
-
-              Experience the difference with Chennai Digital Prints – where quality, affordability, and customer satisfaction come together to fulfill all your printing needs.</p>
+            <p className='font-semibold md:text-xl text-justify md:text-center md:w-1/2 mx-auto'>Customer satisfaction isn't just a goal, it's our guiding principle. With our unwavering commitment, we guarantee your utmost satisfaction.
+             Our dedicated team stands ready to address any inquiries, fulfill requests, or resolve concerns promptly. Every interaction with us is designed to be seamless and enjoyable because exceeding your expectations is our priority. 
+             Discover the unparalleled experience offered by Chennai Digital Prints, where excellence in quality, affordability, and customer satisfaction converge to meet all your printing needs</p>
           </div>
           {/* Marquee space  */}
           <div className='py-5'>

@@ -1,6 +1,6 @@
 .card {
-    width: 20rem;
-    height: 25rem;
+    width: 24rem;
+    height: 30rem;
     transition: all 0.2s;
     position: relative;
     border-radius: 10px;
@@ -56,6 +56,8 @@
 /* mine */
 .card-img{
     border-radius: 10px;
+    height: 20rem;
+    width: 100%;
 }
 
 
@@ -109,6 +111,7 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
+    width: 40%;
     transition: all 0.5s ease;
   }
   .button::after {
@@ -136,11 +139,21 @@
         width: 15rem;
         height: 20rem;
     }
+    .card-img{
+      height: 12rem;
+    }
+    .button{
+      width: 60%;
+      height: 40%;
+  }
   }
   @media (width <= 500px){
     .card{
         width: 15rem;
         height: 20rem;
+    }
+    .card-img{
+      height: 12rem;
     }
     .button{
         width: 90%;

@@ -27,9 +27,8 @@ export default function Home() {
                 <div className='w-full'>
                     <div className='hero-text md:text-6xl sm:text-5xl text-4xl w-full relative font-bold text-center '>
                         <div className='hero-text-div w-full relative'>
-                            <h1 className='head-text '>Welcome to</h1>
                             <h1 className='head-text'>Chennai Digital Prints</h1>
-                            <p className='lg:text-4xl md:text-xl text-lg head-text py-2 '>We Done All Kind of Printing</p>
+                            <p className='lg:text-4xl md:text-xl text-lg head-text py-2 '>DIGITAL PRESS - A UNIT OF CHENNAI XEROX</p>
                         </div>
                     </div>
                     <div className='hero-image h-full flex justify-center items-end relative  '>

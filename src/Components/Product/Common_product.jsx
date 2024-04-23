@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Product.css"
 import Card from './Card/Card'
+import cardlist from './Card/Carddata'
 
 export default function Common_product() {
+    const [cardvalue, Setcarddata] = useState(cardlist)
     return (
         <>
             <div id='Product' className='Product'>
@@ -10,21 +12,11 @@ export default function Common_product() {
                     <h1 className='sm:text-5xl text-center text-3xl font-bold head '>OUR PRODUCTS</h1>
                </div>
                <div className='grid xl:grid-cols-3 sm:grid-cols-2 my-10 gap-5'>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {
+                       cardvalue.map((val)=>(
+                            <Card val={val} /> 
+                       ))
+                    }
                </div>
             </div>
         </>

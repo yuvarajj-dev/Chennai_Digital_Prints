@@ -77,6 +77,14 @@ const cardlist = [
     img_url:"https://5.imimg.com/data5/SELLER/Default/2023/1/GG/WK/EQ/68683419/5210-program-control-paper-cutting-machine-500x500.jpeg",
     name:"Program Cutting Machine "
   },
+  {
+    img_url:"https://media.istockphoto.com/id/1008294438/vector/black-and-yellow-office-id-card-template.jpg?s=612x612&w=0&k=20&c=02n9LsLC2-cCkmVVrMs4woqNBDo19ZgrEdvZTetHPAc=",
+    name:"ID Cards"
+  },
+  {
+    img_url:"https://www.printplace.com/blog/wp-content/uploads/2017/05/Mock-Up.jpg",
+    name:"Catlogs"
+  },
 
 ]
 

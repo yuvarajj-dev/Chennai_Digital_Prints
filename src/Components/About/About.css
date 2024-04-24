@@ -13,7 +13,20 @@
 
 .marqu{
     width: 100%;
-    height: 6rem;
+    height: 8rem;
     border-radius: 100px;
     background-color: #fff;
+}
+.client-img{
+    width: 7rem;
+    margin: 0 2rem;
+}
+
+@media (width < 500px){
+    .marqu{
+        height: 5rem;
+    }
+    .client-img{
+        width: 4.5rem;
+    }
 }

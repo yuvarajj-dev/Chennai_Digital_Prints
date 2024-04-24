@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import "./About.css";
 import gsap, { ScrollTrigger, TextPlugin } from 'gsap/all';
 import SplitType from 'split-type';
+import Marquee from 'react-fast-marquee';
+import CLIENTS from './Aboutdata/Aboutdata';
+
 
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 export default function About() {
@@ -113,13 +116,20 @@ export default function About() {
           <div className='customer py-5'>
             <h1 className='text-center md:text-4xl text-2xl font-bold py-4 who'>Customer Satisfaction Guaranteed</h1>
             <p className='font-semibold md:text-xl text-justify md:text-center md:w-1/2 mx-auto'>Customer satisfaction isn't just a goal, it's our guiding principle. With our unwavering commitment, we guarantee your utmost satisfaction.
-             Our dedicated team stands ready to address any inquiries, fulfill requests, or resolve concerns promptly. Every interaction with us is designed to be seamless and enjoyable because exceeding your expectations is our priority. 
-             Discover the unparalleled experience offered by Chennai Digital Prints, where excellence in quality, affordability, and customer satisfaction converge to meet all your printing needs</p>
+              Our dedicated team stands ready to address any inquiries, fulfill requests, or resolve concerns promptly. Every interaction with us is designed to be seamless and enjoyable because exceeding your expectations is our priority.
+              Discover the unparalleled experience offered by Chennai Digital Prints, where excellence in quality, affordability, and customer satisfaction converge to meet all your printing needs</p>
           </div>
           {/* Marquee space  */}
           <div className='py-5'>
             <h1 className='md:text-3xl text-xl font-bold who text-center py-3  '>OUR CLIENTS</h1>
-            <div className='marqu shadow-xl'>
+            <div className='marqu shadow-xl flex justify-center items-center overflow-hidden'>
+              <Marquee pauseOnHover={true} speed={70}>
+                {
+                  CLIENTS.map((val) => (
+                    <img src={val.Client_path} alt={val.Client_name} className='client-img' />
+                  ))
+                }
+              </Marquee>
             </div>
           </div>
         </div>

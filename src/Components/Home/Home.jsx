@@ -13,7 +13,7 @@ export default function Home() {
                     y: '110%',
                     opacity: 0,
                     rotationZ: '10',
-                    duration: 1.15,
+                    duration: 1,
                     ease: 'power1.inOut',
                     stagger: 0.1,
                 });

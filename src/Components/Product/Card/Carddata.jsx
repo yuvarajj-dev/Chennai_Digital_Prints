@@ -1,7 +1,7 @@
 const cardlist = [
   {
     img_url: "https://www.printlipi.com/images/standard-visitingcard.png",
-    name: "Visiting Cards"
+    name: 'Visiting Cards'
   },
   {
     img_url:"https://media.istockphoto.com/id/1008294438/vector/black-and-yellow-office-id-card-template.jpg?s=612x612&w=0&k=20&c=02n9LsLC2-cCkmVVrMs4woqNBDo19ZgrEdvZTetHPAc=",

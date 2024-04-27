@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react'
 import "./Card.css"
 import gsap from 'gsap';
-import {Image} from "primereact/image"
+
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 
 gsap.registerPlugin(ScrollTrigger);
 export default function Card(props) {
-
     const Handleanime = () => {
         const titles = gsap.utils.toArray(".card-main");
         const imgs = gsap.utils.toArray('.card');
@@ -30,7 +29,6 @@ export default function Card(props) {
     useEffect(() => {
         Handleanime();
     }, []);
-
     return (
         <>
             <div className='mx-auto my-10 card-main'>
@@ -44,7 +42,7 @@ export default function Card(props) {
                         <div className='text-center my-2'>
                             <h1 className='md:text-2xl sm:text-lg font-bold card-head'>{props.val.name}</h1>
                             <div className='my-5'>
-                                <button className='button'>For more...</button>
+                                <button onClick={()=>{props.open(true,props.val.name)}} className='button'>For more...</button>
                             </div>
                         </div>
                     </div>

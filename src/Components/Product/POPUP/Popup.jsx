@@ -26,8 +26,8 @@ export default function Popup(props) {
 
   if (props.value) {
     return (
-      <div className='Popup'>
-        <button onClick={() => { props.close(false) }} className='absolute right-2 sm:right-5 sm:top-2'>
+      <div className='Popup shadow-2xl'>
+        <button onClick={() => { props.close(false) }} className='fixed  right-2 sm:right-5 sm:top-2'>
           <svg
             height="25px"
             viewBox="0 0 512 512"
@@ -46,7 +46,7 @@ export default function Popup(props) {
               if (val.Product_name.includes(props.name)) {
                 return (
                   <div className='popupimg'>
-                    <img src={val.Product_path} alt={val.Product_name} loading='lazy' />
+                    <img src={val.Product_path} alt={val.Product_name} loading='lazy' className='shadow-xl' />
                   </div>
                 )
               } else {

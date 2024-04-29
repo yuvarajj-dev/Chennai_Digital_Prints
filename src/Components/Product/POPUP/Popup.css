@@ -1,21 +1,24 @@
 .Popup {
-    width: 100%;
-    background-color: rgba(0, 0, 0, .7);
+    width: 60%;
+    background-color: rgb(91, 188, 255, 0.7);
     position: fixed;
+    backdrop-filter: blur(5px);
     z-index: 2;
-    left: 0.0;
-    height: 100%;
-    top: 0;
+    left: 16rem;
+    height: 92%;
+    top: 1.8rem;
     border-radius: 2rem;
+    overflow: hidden;
 }
 
 .popupimg {
-    width: 70%;
+    width: 20rem;
     height: 22rem;
     padding: 1rem;
     margin: 0rem auto;
     align-items: center;
-    
+    display: flex;
+    justify-content: center;
 }
 
 .popupimg>Img {
@@ -30,7 +33,7 @@
 @media(width <=1024px) {
     .Popup {
         width: 100%;
-        top: 0;
+        top: 1.5rem;
         left: 0;
         max-height: 100%;
         overflow-y: scroll;
@@ -48,7 +51,7 @@
         max-height: 100%;
         overflow-y: scroll;
         left: 0;
-        top: 0;
+        top: 1rem;
     }
 
     .popupimg {

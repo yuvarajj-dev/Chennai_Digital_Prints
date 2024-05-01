@@ -11,8 +11,7 @@
     border-radius: 25px;
 }
 .nav-btn:hover{
-    background-color: #09cafa !important;
-    transition: all 2s;
+    background-color: #1aaa4f !important;
 }
 .nav-link:hover{
     color: red;

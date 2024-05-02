@@ -8,7 +8,9 @@
 
   gsap.registerPlugin(TextPlugin, ScrollTrigger);
   export default function About() {
-    
+    useEffect(() => {
+      ScrollTrigger.refresh();
+    }, []);
     useEffect(() => {
 
       // Apply animations using ScrollTrigger
@@ -39,7 +41,9 @@
         }
       );
 
-    }, []);
+    }, [
+      ScrollTrigger.refresh()
+    ]);
     useEffect(() => {
       const animetext = (selector, scrollTriggerSettings) => {
         const elements = document.querySelectorAll(selector);
@@ -77,11 +81,10 @@
         end: "top 50%",
         scrub: true,
       });
-    }, []);
-    useEffect(() => {
-      ScrollTrigger.refresh();
-    }, []);
-
+    }, [
+      ScrollTrigger.refresh()
+    ]);
+    
     return (
       <>
         <div id='About' className='about pt-14'>

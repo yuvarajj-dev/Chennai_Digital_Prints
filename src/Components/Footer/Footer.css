@@ -30,4 +30,13 @@
     cursor: pointer;
     margin: 0 1rem 0 0;
 }
+@media (width < 600px){
+  .googlemap{
+    width: 100%;
+    padding: 0 .5rem;
+  }
+  .googlemap > .gmap{
+    width: 100%;
+  }
+}
 

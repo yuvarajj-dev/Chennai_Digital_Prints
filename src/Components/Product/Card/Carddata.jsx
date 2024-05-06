@@ -32,7 +32,7 @@ const cardlist = [
     name: "Booklet's",
   },
   {
-    img_url:"https://www.printplace.com/blog/wp-content/uploads/2017/05/Mock-Up.jpg",
+    img_url:"https://mir-s3-cdn-cf.behance.net/project_modules/disp/f83f9918453377.562c9b712d657.png",
     name:"Catalogue"
   },
   {

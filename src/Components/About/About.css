@@ -21,6 +21,14 @@
     width: 7rem;
     margin: 0 2rem;
 }
+@media (width < 768px){
+    .what-text{
+        order: 2;
+    }
+    .what-img{
+        order: 1;
+    }
+}
 
 @media (width < 500px){
     .marqu{

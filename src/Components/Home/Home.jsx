@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import "./Home.css";
 import gsap from 'gsap/all';
 import SplitType from 'split-type';
-
+//hello world
 export default function Home() {
     useEffect(() => {
         const homeanime = (selector) => {

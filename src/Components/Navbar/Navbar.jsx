@@ -18,7 +18,7 @@ export default function NAVBAR() {
         <>
             <Navbar fluid rounded className='  navbg'>
                 <Navbar.Brand className='h-16 relative mx-auto sm:mx-0 '>
-                    <img src=".\web\Logo.png" className="mr-3  logo sm:h-9" alt="Flowbite React Logo" />
+                    <img src="./web/Logo.png" className="mr-3  logo sm:h-9" alt="Flowbite React Logo" />
                 </Navbar.Brand>
                 <div className="flex md:order-2 mt-5 sm:mt-0 sm:mx-0  mx-auto">
                     <Button onClick={()=>{Handlewhatsapp()}} className='nav-btn mx-2 md:mx-0'>
